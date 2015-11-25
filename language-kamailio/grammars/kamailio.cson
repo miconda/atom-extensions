@@ -1,0 +1,79 @@
+'scopeName': 'source.kamailio'  
+'name': 'Kamailio'  
+'fileTypes': [
+	'cfg'
+]
+'firstLineMatch': '\\b(KAMAILIO|kamailio|SER|ser|SIP-Router|sip-router)\\b'
+'patterns': [
+	{
+		'match': '(\\#[!]|[!]{2})(KAMAILIO|kamailio|SER|ser|SIP-Router|sip-router)\\b'
+		'name': 'support.class.kamailio'
+	}
+	{
+		'match': '(\\#!define|\\#!ifdef|\\#!ifndef|\\#!else|\\#!endif|\\#!subst|\\#!substdef|\\#!trydef)\\b'
+		'name': 'storage.type.primitive.kamailio'
+	}
+	{
+		comment: 'Line comment'
+		'begin': '\\#[^!]'
+		'end': '\\n'
+		'name': 'comment.line.number-sign.kamailio'
+	}
+	{
+		comment: 'Line comment'
+		'begin': '//'
+		'end': '\\n'
+		'name': 'comment.line.double-slash.kamailio'
+	}
+	{
+		comment: 'Block comment'
+		'begin': '/\\*'
+		'end': '\\*/'
+		'name': 'comment.block.kamailio'
+	}
+	{
+		'begin': '"'
+		'end': '"'
+		'name': 'string.quoted.double.kamailio'
+	}
+	{
+		match: "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b"
+		name: "constant.numeric.kamailio"
+	}
+	{
+		'match': '\\b(request_route|route|branch_route|failure_route|reply_route|onreply_route|event_route)\\b'
+		'name': 'support.function.kamailio'
+	}
+	{
+		'match': '\\b(exit|return|drop|break|if|else|while|switch|case|default)\\b'
+		'name': 'keyword.control.conditional.kamailio'
+	}
+	{
+		'match': '\\b(include_file|import_file)\\b'
+		'name': 'storage.type.primitive.kamailio'
+	}
+	{
+		'match': '(\\#[!]|[!]{2})(include_file|import_file)\\b'
+		'name': 'storage.type.primitive.kamailio'
+	}
+	{
+		'match': '(\\$)null\\b'
+		'name': 'constant.language.null.kamailio'
+	}
+	{
+		'match': '(\\$)[a-zA-Z0-9_]+\\b'
+		'name': 'support.variable.kamailio'
+	}
+	{
+		'match': '\\b(true|yes)\\b'
+		'name': 'constant.language.boolean.true.kamailio'
+	}
+	{
+		'match': '\\b(false|no)\\b'
+		'name': 'constant.language.boolean.false.kamailio'
+	}
+	{
+		'match': '\\b(loadmodule|modparam)\\b'
+		name: 'keyword.source.kamailio'
+	}
+]

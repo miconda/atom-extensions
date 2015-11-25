@@ -1,0 +1,9 @@
+{
+	'name': 'language-kamailio',
+	'version': '0.1.0',
+	'description': 'Syntax highlighting for Kamailio configuration file',
+	'engines': {
+		'atom': '*',
+		'node': '*'
+	}
+}
