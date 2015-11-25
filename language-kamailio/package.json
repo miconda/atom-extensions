@@ -1,9 +1,24 @@
 {
-	'name': 'language-kamailio',
-	'version': '0.1.0',
-	'description': 'Syntax highlighting for Kamailio configuration file',
-	'engines': {
-		'atom': '*',
-		'node': '*'
-	}
+	"name": "language-kamailio",
+	"version": "0.1.0",
+	"description": "Syntax highlighting for Kamailio configuration files",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/miconda/atom-extensions.git"
+	},
+	"keywords": [
+		"atom",
+		"syntax-highlighting",
+		"kamailio"
+	],
+	"author": "Daniel-Constantin Mierla <miconda@gmail.com>",
+	"license": "GPLv2",
+	"engines": {
+		"atom": "*",
+		"node": "*"
+	},
+	"bugs": {
+		"url": "https://github.com/miconda/atom-extensions/issues"
+	},
+	"homepage": "https://github.com/miconda/atom-extensions/tree/master/language-kamailio"
 }
