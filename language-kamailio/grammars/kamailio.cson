@@ -3,7 +3,7 @@
 'fileTypes': [
 	'cfg'
 ]
-'firstLineMatch': '\\b(KAMAILIO|kamailio|SER|ser|SIP-Router|sip-router)\\b'
+'firstLineMatch': '\\b(KAMAILIO|kamailio|SER|ser|SIP-Router|sip-router|OPENSER|openser)\\b'
 'patterns': [
 	{
 		'match': '(\\#[!]|[!]{2})(KAMAILIO|kamailio|SER|ser|SIP-Router|sip-router)\\b'
