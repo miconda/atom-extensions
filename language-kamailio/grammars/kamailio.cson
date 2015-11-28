@@ -1,5 +1,5 @@
-'scopeName': 'source.kamailio'  
-'name': 'Kamailio'  
+'scopeName': 'source.kamailio'
+'name': 'Kamailio'
 'fileTypes': [
 	'cfg'
 ]
@@ -75,5 +75,15 @@
 	{
 		'match': '\\b(loadmodule|modparam)\\b'
 		'name': 'keyword.source.kamailio'
+	}
+	{
+		'comment': 'Core keyword variables'
+		'match': '\\b(af|dst_ip|dst_port|from_uri|method|msg:len|proto|status|snd_af|snd_ip|snd_port|snd_proto|src_ip|src_port|to_af|to_ip|to_port|to_proto|to_uri|uri|uri:host|uri:port)\\b'
+		'name': 'support.variable.kamailio'
+	}
+	{
+		'comment': 'Core keyword values'
+		'match': '\\b(max_len|myself|udp|UDP|tcp|TCP|tls|TLS|sctp|SCTP|ws|WS|wss|WSS|inet|INET|inet6|INET6|sslv23|SSLv23|SSLV23|sslv2|SSLv2|SSLV2|sslv3|SSLv3|SSLV3|tlsv1|TLSv1|TLSV1)\\b'
+		'name': 'constant.language.kamailio'
 	}
 ]
