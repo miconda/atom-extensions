@@ -65,11 +65,11 @@
 		'name': 'support.variable.kamailio'
 	}
 	{
-		'match': '\\b(true|yes)\\b'
+		'match': '\\b(true|yes|on|enabled)\\b'
 		'name': 'constant.language.boolean.true.kamailio'
 	}
 	{
-		'match': '\\b(false|no)\\b'
+		'match': '\\b(false|no|off|disabled)\\b'
 		'name': 'constant.language.boolean.false.kamailio'
 	}
 	{
