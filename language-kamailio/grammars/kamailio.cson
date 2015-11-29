@@ -59,6 +59,19 @@
 		'name': 'support.function.kamailio'
 	}
 	{
+		'comment': 'Executing routing blocks with name'
+		'match': '\\b(route)\\s*\\(([^)]+)\\)'
+		'captures': {
+			'1': {
+				'name': 'keyword.source.kamailio'
+			},
+			'2': {
+				'name': 'constant.other.kamailio'
+			}
+		}
+		'name': 'support.function.kamailio'
+	}
+	{
 		'match': '\\b(exit|return|drop|break|if|else|while|switch|case|default)\\b'
 		'name': 'keyword.control.conditional.kamailio'
 	}
