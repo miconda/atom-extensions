@@ -41,7 +41,21 @@
 		'name': 'constant.numeric.kamailio'
 	}
 	{
-		'match': '\\b(request_route|route|branch_route|failure_route|reply_route|onreply_route|event_route)\\b'
+		'comment': 'Main routing blocks without name'
+		'match': '\\b(request_route|reply_route|onsend_route)\\b'
+		'name': 'support.function.kamailio'
+	}
+	{
+		'comment': 'Main routing blocks with name'
+		'match': '\\b(route|branch_route|failure_route|onreply_route|event_route)\\s*\\[([^\\]]+)\\]'
+		'captures': {
+			'1': {
+				'name': 'entity.name.class.kamailio'
+			},
+			'2': {
+				'name': 'constant.other.kamailio'
+			}
+		}
 		'name': 'support.function.kamailio'
 	}
 	{
