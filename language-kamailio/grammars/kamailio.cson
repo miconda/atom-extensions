@@ -10,7 +10,21 @@
 		'name': 'support.class.kamailio'
 	}
 	{
-		'match': '(\\#!define|\\#!ifdef|\\#!ifndef|\\#!else|\\#!endif|\\#!subst|\\#!substdef|\\#!trydef)\\b'
+		'comment': 'Preprocessor directives with ID'
+		'match': '(\\#!define|\\#!ifdef|\\#!ifndef|\\#!trydef)\\s*(\\w*)\\b'
+		'captures': {
+			'1': {
+				'name': 'storage.type.primitive.kamailio'
+			},
+			'2': {
+				'name': 'constant.other.kamailio'
+			}
+		}
+		'name': 'storage.type.primitive.kamailio'
+	}
+	{
+		'comment': 'Preprocessor directives without ID'
+		'match': '(\\#!else|\\#!endif|\\#!subst|\\#!substdef)\\b'
 		'name': 'storage.type.primitive.kamailio'
 	}
 	{
