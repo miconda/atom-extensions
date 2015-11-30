@@ -3,10 +3,10 @@
 'fileTypes': [
 	'cfg'
 ]
-'firstLineMatch': '\\b(KAMAILIO|kamailio|SER|ser|SIP-Router|sip-router|OPENSER|openser)\\b'
+'firstLineMatch': '\\b(KAMAILIO|kamailio|SER|ser|SIP-ROUTER|sip-router|OPENSER|openser)\\b'
 'patterns': [
 	{
-		'match': '(\\#[!]|[!]{2})(KAMAILIO|kamailio|SER|ser|SIP-Router|sip-router)\\b'
+		'match': '(\\#[!]|[!]{2})(KAMAILIO|kamailio|SER|ser|SIP-ROUTER|sip-router)\\b'
 		'name': 'support.class.kamailio'
 	}
 	{
@@ -128,7 +128,7 @@
 		'name': 'constant.language.kamailio'
 	}
 	{
-		'match': '=|~|<|>|\\+|-|\\*|\\^|&|/|\\||!|\\b(?i:(mod|and|not|or|xor))\\b'
+		'match': '=|~|<|>|\\+|-|\\*|\\^|&|/|\\||!|\\b(?i:(mod|and|not|or|xor|defined|eq|ieq|ne|ine))\\b'
 		'name': 'keyword.operator.kamailio'
 	}
 ]
