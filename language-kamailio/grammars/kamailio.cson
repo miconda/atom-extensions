@@ -46,7 +46,7 @@
 		'name': 'comment.block.kamailio'
 	}
 	{
-		'begin': '"'
+		'begin': '([^\\\\]")'
 		'end': '"'
 		'name': 'string.quoted.double.kamailio'
 	}
