@@ -116,7 +116,7 @@
 	}
 	{
 		'comment': 'variables with inner name and root parenthesis and parameters'
-		'match': '(\\$)\\([a-zA-Z0-9_]+\\(([a-zA-Z0-9_]+)\\){([a-zA-Z0-9_.,]+)}(?:{([a-zA-Z0-9.,]+)})?\\)'
+		'match': '(\\$)\\([a-zA-Z0-9_]+\\(([a-zA-Z0-9_\-]+)\\){([a-zA-Z0-9_.,]+)}(?:{([a-zA-Z0-9.,]+)})?\\)'
 		'captures': {
 			'1': {
 				'name': 'support.variable.kamailio'
