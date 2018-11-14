@@ -115,8 +115,27 @@
 		'name': 'support.variable.kamailio'
 	}
 	{
+		'comment': 'variables with inner name and root parenthesis and parameters'
+		'match': '(\\$)\\([a-zA-Z0-9_]+\\(([a-zA-Z0-9_\-]+)\\){([a-zA-Z0-9_.,]+)}(?:{([a-zA-Z0-9.,]+)})?\\)'
+		'captures': {
+			'1': {
+				'name': 'support.variable.kamailio'
+			},
+			'2': {
+				'name': 'constant.other.kamailio'
+			}
+			'3': {
+				'name': 'constant.other.kamailio'
+			}
+			'4': {
+				'name': 'constant.other.kamailio'
+			}
+		}
+		'name': 'support.variable.kamailio'
+	}
+	{
 		'comment': 'variables with inner name'
-		'match': '(\\$)[a-zA-Z0-9_]+\\(([a-zA-Z0-9_]+)\\)'
+		'match': '(\\$)[a-zA-Z0-9_]+\\(([a-zA-Z0-9_\-]+)\\)'
 		'captures': {
 			'1': {
 				'name': 'support.variable.kamailio'
