@@ -5,3 +5,5 @@
 *~
 # Emacs file locks
 .#*
+# ide folders
+.vs
